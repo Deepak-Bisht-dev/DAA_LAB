@@ -25,9 +25,14 @@ int main(){
 		int k = i < n-1 ? i : n-1;
 		for(int j = i/2; j <= k; j++){
 			count++;
-			if(arr[j] =+)
-		} 
+			if(arr[j] == key){
+				cout << "Present " << count << endl;
+				flag = 1;
+				break;
+			}
+		}
+		if(flag == 0)  cout << "Not Present " << count << endl;
 	}
-
+	
 	return 0;
 }
